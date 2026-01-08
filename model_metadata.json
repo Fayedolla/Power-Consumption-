@@ -1,0 +1,71 @@
+{
+  "model_type": "Neural Network (MLP)",
+  "framework": "TensorFlow/Keras",
+  "created_date": "2025-12-14 14:47:12",
+  "training_samples": 1639404,
+  "test_samples": 409852,
+  "metrics": {
+    "mse": 0.0028960829535447396,
+    "rmse": 0.05381526691882834,
+    "mae": 0.02407870745952526,
+    "r2_score": 0.9963927341685572,
+    "mape": 3.402291301633474
+  },
+  "model_architecture": {
+    "layers": [
+      {
+        "type": "Dense",
+        "units": 128,
+        "activation": "relu"
+      },
+      {
+        "type": "BatchNormalization"
+      },
+      {
+        "type": "Dropout",
+        "rate": 0.3
+      },
+      {
+        "type": "Dense",
+        "units": 64,
+        "activation": "relu"
+      },
+      {
+        "type": "BatchNormalization"
+      },
+      {
+        "type": "Dropout",
+        "rate": 0.2
+      },
+      {
+        "type": "Dense",
+        "units": 32,
+        "activation": "relu"
+      },
+      {
+        "type": "BatchNormalization"
+      },
+      {
+        "type": "Dropout",
+        "rate": 0.2
+      },
+      {
+        "type": "Dense",
+        "units": 16,
+        "activation": "relu"
+      },
+      {
+        "type": "Dense",
+        "units": 1
+      }
+    ],
+    "optimizer": "Adam",
+    "learning_rate": 0.001,
+    "loss": "mse"
+  },
+  "hyperparameters": {
+    "epochs": 47,
+    "batch_size": 128,
+    "validation_split": 0.2
+  }
+}

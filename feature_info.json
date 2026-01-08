@@ -1,0 +1,31 @@
+{
+  "feature_names": [
+    "Voltage",
+    "Global_intensity",
+    "Sub_metering_1",
+    "Sub_metering_2",
+    "Sub_metering_3",
+    "hour",
+    "day",
+    "month",
+    "day_of_week",
+    "quarter",
+    "hour_sin",
+    "hour_cos",
+    "day_sin",
+    "day_cos",
+    "is_weekend",
+    "time_of_day",
+    "lag_1h",
+    "lag_2h",
+    "lag_3h",
+    "lag_6h",
+    "lag_12h",
+    "lag_24h",
+    "rolling_mean_3h",
+    "rolling_mean_6h",
+    "rolling_std_6h"
+  ],
+  "n_features": 25,
+  "target_name": "Global_active_power"
+}
